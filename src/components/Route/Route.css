@@ -1,0 +1,20 @@
+td {
+    text-align: center
+  }
+  .line td {
+    position: relative;
+  }
+  .line td:after {
+    content: '';
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -100%);
+    z-index: -1;
+  }
+  .line td:last-child:after {
+    display: none;
+  }
